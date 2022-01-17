@@ -4,82 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-Classe">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>E-Classe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>DASHBOARD</title>
 </head>
 <body>
-    <section class="d-flex" style="height: 930px;">
-
-        <div class="col-2 pt-4" style="background-color: #FAFFC1;">
-            <h4 class="container fw-bold border-start border-5 border-info mx-md-4 mx-1">E-classe</h4>
-            <div>
-                <div class="text-center">
-                    <img src="img/youcode.png" class="rounded-circle mt-5 mb-3 col-6" alt="img-user">
-                    <h5 class="fw-bold fs-6">Admin name</h5>
-                    <h6 class="text-info">Admin</h6>
-                </div>
-                <ul class="nav nav-pills d-flex flex-column justify-content-center mt-5 w-50 mx-auto ">
-                    <li class=""><a class="ps-0 w-sm-50 text-dark btn btn-outline-primary border-0" href=""><i class="bi bi-house-door mx-3"></i><span class="d-none d-sm-inline">Home</span></a></li>
-                    <li><a class=" ps-0 text-dark btn btn-outline-primary border-0 my-2" href="#"><i class="bi bi-bookmark mx-3"></i><span class="d-none d-sm-inline">Course</span></a></li>
-                    <li><a class="ps-0 text-dark btn btn-outline-primary border-0" href=""><i class="bi bi-mortarboard mx-3"></i><span class="d-none d-sm-inline">Students</span></a></li>
-                    <li><a class="ps-0 text-dark btn btn-outline-primary border-0 my-2" href=""><i class="bi bi-currency-dollar mx-3"></i><span class="d-none d-sm-inline">Payment</span></a></li>
-                    <li><a class="ps-0 text-dark btn btn-outline-primary border-0" href=""><i class="bi bi-file-earmark-bar-graph mx-3"></i><span class="d-none d-sm-inline">Report</span></a></li>
-                    <li><a class="ps-0 text-dark btn btn-outline-primary border-0 mb-2 my-2" href=""><i class="bi bi-sliders mx-3"></i><span class="d-none d-sm-inline">Settings</span class="d-none d-sm-inline"></a></li>
-                    <li><a class="ps-0 text-dark btn btn-outline-primary border-0 mt-5 mb-3" href=""><span class="mx-3 d-none d-sm-inline">Logout</span><i class="bi bi-box-arrow-right ms-2"></i></a></li>
-                </ul>
+    <!--start sidebar-->
+    <div class="container-fluid" style="align-items:center;">
+        <div class="row">
+            <input type="checkbox" id="menu">
+            <div style="background: #FAFFC1;" id="toggel" class="col-md-2 text-center">
+                <h2 class="titre text-start"><span class="text-info p-2">|</span>E-classe</h2>
+                <hr>
+                <img class="rounded rounded-circle" src="img/profile.svg" alt="profile">
+                <h4>Admin name</h4>
+                <p class="text-info">Admin</p>
+                <hr>
+                <nav class="text-start p-3">
+                    <a class="nav-link text-black" href="dashboard.html">
+                        <img class="me-3" src="img/home.svg" alt=""> Home
+                    </a>
+                    <hr>
+                    <a class="nav-link text-black" href="#">
+                        <img class="me-3" src="img/save.svg" alt=""> Course
+                    </a>
+                    <hr>
+                    <a class="nav-link text-black" href="Students.html">
+                        <img class="me-3" src="img/student.svg" alt=""> Students
+                    </a>
+                    <hr>
+                    <a class="nav-link text-black" href="payment.html">
+                        <img class="me-3" src="img/payement.svg" alt=""> Payment
+                    </a>
+                    <hr>
+                    <a class="nav-link text-black" href="#">
+                        <img class="me-3" src="img/report.svg" alt=""> Report
+                    </a>
+                    <hr>
+                    <a class="nav-link text-black" href="#">
+                        <img class="me-3" src="img/setting.svg" alt=""> Settings
+                    </a>
+                    <hr>
+                    <hr>
+                </nav>
+                <a href="sign-in.html" class="nav-link text-black">
+                    <img class="bi me-2" src="img/out.svg" alt=""> Logout
+                </a>
+                <hr>
             </div>
-        </div>
-
-        <div class="col-md-10 mb-5">
-
-            <div class="pt-3 px-3 d-flex justify-content-between shadow-sm">
-                <i class="bi bi-caret-left text-secondary btn"></i>
-                <div>
-                    <input class="border border form-label" style="border-radius: 8px;" type="recheche" placeholder="Search...">
-                    <i class="bi bi-bell text-secondary me-4 btn"></i>
-                </div>
-            </div>
-
-
-            <div class="row mt-5 mx-3">
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <div class="h-100 px-2 py-3" style="background-color: #F0F9FF; border-radius: 8px;">
-                        <h1><i class="bi bi-mortarboard" style="color: #74C1ED;"></i></h1>
-                        <p>Students</p>
-                        <h3 class="float-end">243</h3>
+            <div class="col-md">
+                <div class="row">
+                    <div style="background: #E5E5E5;" class="col-md d-flex justify-content-between">
+                        <label style="font-size: x-large;" for="menu" class="label"><img src="img/arrow-right-circle.svg" alt=""></label>
+                        <form class="d-flex my-2 ">
+                            <input class="me-2" type="search" placeholder="Search...                   🔍">
+                            <img src="img/notif.svg" alt="">
+                        </form>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <div class="h-100 px-2 py-3" style="background-color: #FEF6FB; border-radius: 8px;">
-                        <h1><i class="bi bi-bookmark" style="color: #EE95C5;"></i></h1>
-                        <p>Course</p>
-                        <h3 class="float-end">13</h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <div class="h-100 px-2 py-4" style="background-color: #FEFBEC; border-radius: 8px;">
-                        <h3><i class="bi bi-currency-dollar" style="color: #00C1FE; border: 3px solid #00C1FE;"></i></h3>
-                        <p>Payments</p>
-                        <div class="d-lg-flex align-items-center float-end">
-                            <h6>DHS</h6><h3>556,000</h3>
+                    <!--end sidebar-->
+                    <!--start Dashboard-->
+                    <div class="container-fluid">
+                        <div class="row mt-5">
+                            <div class="col-md col-sm-6 p-2">
+                                <div class="p-2" style="background: #F0F9FF;border-radius: 6px;">
+                                    <i class="bi bi-mortarboard fs-3" style="color: #74C1ED;"></i>
+                                    <p>Student</p>
+                                    <p class="text-end fw-bold fs-5">243</p>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-6 p-2">
+                                <div class="p-2" style="background: #FEF6FB;border-radius: 6px;">
+                                    <i class="bi bi-bookmark fs-3" style="color: #EE95C5;"></i>
+                                    <p>Course</p>
+                                    <p class="text-end fw-bold fs-5">13</p>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-6 p-2">
+                                <div class="p-2" style="background: #FEFBEC;border-radius: 6px;">
+                                    <i class="bi bi-currency-dollar fs-3" style="color: #74C1ED;"></i>
+                                    <p>Payments</p>
+                                    <p class="text-end fw-bold fs-5">DHS 556,000</p>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-6 p-2">
+                                <div class="p-2" style="background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);border-radius: 6px;">
+                                    <i class="bi bi-person text-white fs-3"></i>
+                                    <p class="text-white">Users</p>
+                                    <p class="text-end fw-bold fs-5">3</p>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3  col-md-6 mb-5">
-                    <div class="h-100 px-2 py-3" style="background-image: linear-gradient(120deg,#00C1FE,#FAFFC1); border-radius: 8px;">
-                        <h1><i class="bi bi-person text-light"></i></h1>
-                        <p class="text-light">User</p>
-                        <h3 class="float-end">3</h3>
-                    </div>
+                    <!--end Dashboard-->
                 </div>
             </div>
 
-
-
         </div>
+    </div>
 
-    </section>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
