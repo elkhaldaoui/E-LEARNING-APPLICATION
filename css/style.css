@@ -1,5 +1,4 @@
 /*start sidebar*/
-
 a{
     text-decoration: none;
 }
@@ -43,3 +42,19 @@ hr{
 
 
 /*end student*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container-fluid{
+    height: 100%;
+}
+#logout{
+    margin-right: 15px;
+    margin-top: 80px;
+}
+.text-start{
+    margin-left: 20%;
+}
