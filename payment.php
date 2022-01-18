@@ -1,70 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include 'assets/navbar.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>PAYMENT</title>
-</head>
-<body>
-    <!--start sidebar-->
-    <div class="container-fluid">
-        <div class="row">
-            <input type="checkbox" id="menu">
-            <div style="background: #FAFFC1;" id="toggel" class="col-md-2 text-center">
-                <h2 class="titre text-start"><span class="text-info p-2">|</span>E-classe</h2>
-                <hr>
-                <img class="rounded rounded-circle" src="img/profile.svg" alt="">
-                <h4>Admin name</h4>
-                <p class="text-info">Admin</p>
-                <hr>
-                <nav class="text-start p-3">
-                    <a class="nav-link text-black" href="dashboard.html">
-                        <img class="me-3" src="img/home.svg" alt=""> Home
-                    </a>
-                    <hr>
-                    <a class="nav-link text-black" href="#">
-                        <img class="me-3" src="img/save.svg" alt=""> Course
-                    </a>
-                    <hr>
-                    <a class="nav-link text-black" href="Students.html">
-                        <img class="me-3" src="img/student.svg" alt=""> Students
-                    </a>
-                    <hr>
-                    <a class="nav-link text-black" href="payment.html">
-                        <img class="me-3" src="img/payement.svg" alt=""> Payment
-                    </a>
-                    <hr>
-                    <a class="nav-link text-black" href="#">
-                        <img class="me-3" src="img/report.svg" alt=""> Report
-                    </a>
-                    <hr>
-                    <a class="nav-link text-black" href="#">
-                        <img class="me-3" src="img/setting.svg" alt=""> Settings
-                    </a>
-                    <hr>
-                    <hr>
-                </nav>
-                <a href="sign-in.html" class="nav-link text-black" id="logout">
-                    <img class="bi me-2" src="img/out.svg" alt=""> Logout
-                </a>
-                <hr>
-            </div>
-            <!--end sidebar-->
-            <!--start navbar-->
-            <div class="col-md">
-                <div class="row">
-                    <div style="background: #E5E5E5;" class="col-md d-flex justify-content-between">
-                        <label style="font-size: x-large;" for="menu" class="label"><img src="img/arrow-right-circle.svg" alt=""></label>
-                        <form class="d-flex my-2">
-                            <input class="me-2" type="search" placeholder="Search...                   🔍">
-                            <img src="img/notif.svg" alt="">
-                        </form>
-                    </div>
+?>
                     <!--end navbar-->
                     <!--start payment-->
                     <div style=" width: 99%; margin: auto;" class="container-fluid bg-light">
@@ -137,7 +74,6 @@
             </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <?php
+include 'assets/js.php';
+?>

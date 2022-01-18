@@ -22,7 +22,7 @@
             <label>Password</label>
             <input type="password" class="form-control opacity-50" placeholder="Enter your password">
         </div>
-        <a class="nav-link active" href="dashboard.html">
+        <a class="nav-link active" href="dashboard.php">
             <div class="d-grid">
                 <button class="btn btn-info text-white" type="button">SIGN IN</button>
             </div>
@@ -32,6 +32,6 @@
         </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <?php
+include 'assets/js.php';
+?>
