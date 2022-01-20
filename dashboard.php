@@ -2,6 +2,7 @@
 include 'assets/navbar.php';
 
 ?>
+
                     <!--end sidebar-->
                     <!--start Dashboard-->
                     <div class="container-fluid">

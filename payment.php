@@ -27,46 +27,27 @@ include 'assets/navbar.php';
                                     <th scope="col" style="color: #acacac;">Date </th>
                                     <th scope="col"></th>
                                 </tr>
-                                <tr>
-                                    <td>Karthi</td>
-                                    <td>First</td>
-                                    <td>00012223</td>
-                                    <td>DHS 100,000</td>
-                                    <td>DHS 500,000</td>
-                                    <td>05-Jan, 2022</td>
-                                    <td><i class="bi bi-eye text-info"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Karthi</td>
-                                    <td>First</td>
-                                    <td>00012223</td>
-                                    <td>DHS 100,000</td>
-                                    <td>DHS 500,000</td>
-                                    <td>05-Jan, 2022</td>
-                                    <td><i class="bi bi-eye text-info"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Karthi</td>
-                                    <td>First</td>
-                                    <td>00012223</td>
-                                    <td>DHS 100,000</td>
-                                    <td>DHS 500,000</td>
-                                    <td>05-Jan, 2022</td>
-                                    <td><i class="bi bi-eye text-info"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Karthi</td>
-                                    <td>First</td>
-                                    <td>00012223</td>
-                                    <td>DHS 100,000</td>
-                                    <td>DHS 500,000</td>
-                                    <td>05-Jan, 2022</td>
-                                    <td><i class="bi bi-eye text-info"></i></td>
-                                </tr>
-
-
+                                <?php 
+                                    $payment_list = array (
+                                        array("Name"=>"Karthi", "PaymentSchedule"=>"First", "BillNumber"=>"00012223", "AmountPaid"=>"100,000DH", "BalanceAmount"=>"500,000DH", "Date"=>"05-Jan-2022"),
+                                        array("Name"=>"Karthi", "PaymentSchedule"=>"First", "BillNumber"=>"00012223", "AmountPaid"=>"100,000DH", "BalanceAmount"=>"500,000DH", "Date"=>"05-Jan-2022"),
+                                        array("Name"=>"Karthi", "PaymentSchedule"=>"First", "BillNumber"=>"00012223", "AmountPaid"=>"100,000DH", "BalanceAmount"=>"500,000DH", "Date"=>"05-Jan-2022"),
+                                        array("Name"=>"Karthi", "PaymentSchedule"=>"First", "BillNumber"=>"00012223", "AmountPaid"=>"100,000DH", "BalanceAmount"=>"500,000DH", "Date"=>"05-Jan-2022"),
+                                        array("Name"=>"Karthi", "PaymentSchedule"=>"First", "BillNumber"=>"00012223", "AmountPaid"=>"100,000DH", "BalanceAmount"=>"500,000DH", "Date"=>"05-Jan-2022")
+                                    );
+                                    foreach ($payment_list as $user) {
+                                        echo '<tr>';
+                                        echo '<td>'.$user['Name'].'</td>';
+                                        echo '<td>'.$user['PaymentSchedule'].'</td>';
+                                        echo '<td>'.$user['BillNumber'].'</td>';
+                                        echo '<td>'.$user['AmountPaid'].'</td>';
+                                        echo '<td>'.$user['BalanceAmount'].'</td>';
+                                        echo '<td>'.$user['Date'].'</td>';
+                                        echo '<td><i class="bi bi-eye text-info"></i></td>';
+                                        echo '</tr>';
+                                        };
+                                ?>
                             </table>
-
                         </div>
                     </div>
                     <!--end payment-->
